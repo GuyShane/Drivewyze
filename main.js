@@ -4,7 +4,7 @@ function toObj(nums) {
     var obj={};
     var colors=[Poly.colors.red, Poly.colors.blue, Poly.colors.yellow];
     for (var i=0; i<nums.length; i++){
-        obj[i]=colors[nums[i]];
+        obj[i+11]=colors[nums[i]];
     }
     return obj;
 }

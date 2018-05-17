@@ -83,8 +83,9 @@ class Poly {
      * poly.assign({1: Poly.blue, 5: Poly.red});
      */
     assign(colors){
+        var self=this;
         Object.keys(colors).forEach((idx)=>{
-            this.dots[idx].color=colors[idx];
+            self.dots[idx].color=colors[idx];
         });
     }
 
