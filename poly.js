@@ -55,9 +55,9 @@ class Poly {
             self.dots.push(new Dot(c));
         });
         connections.forEach((conn)=>{
-            if (this.testArray(conn, this.dots.length, (num, val)=>{return val>=num;}) ||
-                this.testArray(conn, 0, (num, val)=>{return val<num;})){
-                throw new TypeError(`Connection values must be in the range 0-${this.dots.length-1}`);
+            if (self.testArray(conn, self.dots.length, (num, val)=>{return val>=num;}) ||
+                self.testArray(conn, 0, (num, val)=>{return val<num;})){
+                throw new TypeError(`Connection values must be in the range 0-${self.dots.length-1}`);
             }
             self.tris.push(new Tri(conn));
         });
